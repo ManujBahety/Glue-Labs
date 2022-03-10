@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Manrope',sans-serif;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%)
+
+}
+.wholeblock{
+    margin: 200px auto;
+    display:flex;
+    width: 650px;
+    height: 250px;
+    border: 2px solid rgb(252, 252, 252);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 1px 1px #e0dfdf;
+    
+}
+.right{
+    
+    padding: 20px;
+    padding-left: 30px;
+    max-width: 420px;
+}
+.righttext h4{
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: rgb(104, 101, 101);
+    text-shadow: 0.5px 0.5px #b3b1b1;
+}
+.righttext h2 {
+    font-weight: 700;
+    color:rgb(90, 87, 87);
+    text-shadow: 0.5px 0.5px #b3b1b1;
+}
+.righttext p{
+    font-weight: 700;
+    color:rgb(90, 87, 87);
+}
+
+.left{
+    background: url(./images/drawers.jpg) no-repeat ;
+    background-size:cover;
+    background-position: center center;
+    width: 40%;
+    border-radius: 5px;
+}
+.inner{
+    position: relative;
+}
+.inner .innerleft{
+    background: url(./images/avatar-michelle.jpg) no-repeat ;
+    width: 10%;
+    height: 35px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: 20px;
+    max-width: 40px;
+    
+
+}
+.inner .innerright{
+    position: absolute;
+    top: 0;
+    padding-left: 45px;
+    text-shadow: 0.3px 0.3px #b3b1b1;
+}
+.inner .share{
+    position: absolute;
+    top:25%;
+    width: 5%;
+    right: 1%;
+}
+.mobile{
+    display: none;
+}
+.inner img:hover{
+    cursor:pointer;
+    background-color: #b3b1b1;
+}
+.sharetext{
+    display:none;
+}
+
+@media(max-width:768px) {
+    .wholeblock{
+        padding: 20px;
+        flex-direction: column;
+        width: 400px;
+        margin: 50px auto;
+        height: 600px;
+    }
+    .left , .right{
+        width: unset;
+    }
+    .share{
+        display:none;
+    }
+    .shar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: hsl(217, 19%, 35%) ;
+        height: 70px;
+        width: 399px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-top: 20px;
+        margin-left: -50px;
+        overflow: hidden;
+        position: relative;
+    }
+    .sharetext{
+        display:block;
+        position: relative;
+        letter-spacing: 0.5rem;
+        padding-left: 50px;
+        color: hsl(210, 2%, 80%);
+        
+    }
+    .innerleft{
+        display: none;
+    }
+    .innerright{
+        display: none;
+    }
+    
+    .mobile{
+        display:block;
+        height: 300px;
+        width: 10%;
+        object-fit: contain;
+    }
+    .iconclass:hover{
+        cursor: pointer;
+    }
+    
+}
