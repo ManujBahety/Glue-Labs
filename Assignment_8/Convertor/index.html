@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Converter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-4 text-center mb-3">Converter</h1>
+        
+        <button class='btn' id="allbtn">Convert</button>
+
+        <form>
+            <h4 class="display-5 text-left mb-3">Weight</h4>
+            <div class="form-group">
+                <input type="number" id="kgsInput" class="form-control form-control-lg" placeholder="Enter Kilograms...">
+            </div>
+        </form>
+        <div class="card card-primary mb-2">
+            <div class="card-block">
+                <h4>Pounds:</h4>
+                <div id="lbsOutput"></div>
+            </div>
+        </div>
+
+        <form>
+            <h4 class="display-5 text-left mb-3">Measurement</h4>
+            <div class="form-group">
+                <input type="number" id="feetInput" class="form-control form-control-lg" placeholder="Enter Feet...">
+            </div>
+        </form>
+        <div class="card card-success mb-2">
+            <div class="card-block1">
+                <h4 class="shift">Centimeters:</h4>
+                <div id="cmsOutput"></div>
+            </div>
+        </div>
+
+        <form>
+            <h4 class="display-5 text-left mb-3">Distance</h4>
+            <div class="form-group">
+                <input type="number" id="kmInput" class="form-control form-control-lg" placeholder="Enter Kilometers...">
+            </div>
+        </form>
+        <div class="card card-success mb-2">
+            <div class="card-block">
+                <h4>Meters:</h4>
+                <div id="mOutput"></div>
+            </div>
+        </div>
+
+        <form>
+            <h4 class="display-5 text-left mb-3">Volume</h4>
+            <div class="form-group">
+                <input type="number" id="cubInput" class="form-control form-control-lg" placeholder="Enter Cubic meters...">
+            </div>
+        </form>
+        <div class="card card-success mb-2">
+            <div class="card-block">
+                <h4>Litres:</h4>
+                <div id="lOutput"></div>
+            </div>
+        </div>
+
+
+        <form>
+            <h4 class="display-5 text-left mb-3">Length</h4>
+            <div class="form-group">
+                <input type="number" id="metInput" class="form-control form-control-lg" placeholder="Enter meters...">
+            </div>
+        </form>
+        <div class="card card-success mb-2">
+            <div class="card-block1">
+                <h4>Inches:</h4>
+                <div id="inOutput"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

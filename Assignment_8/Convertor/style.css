@@ -1,0 +1,19 @@
+.btn{
+    border: none;
+    margin-bottom: 10px;
+    color: white;
+    background-color: darkcyan;
+}
+.card-block{
+    background-color: aqua;
+}
+.card-block1{
+    height: 80px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    background-color: aquamarine;
+}
+.shift{
+    margin-left: 20px;
+}
