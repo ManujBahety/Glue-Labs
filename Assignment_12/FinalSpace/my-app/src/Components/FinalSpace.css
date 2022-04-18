@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: rgb(18, 182, 204);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(6, 10, 53);
+    font-size: 15px;
+}
+p{
+    color : white;
+}
+
+h1{
+    margin: 25px 0;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 0.3%;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 100%;
+    margin: 0% 12%;
+    border-radius: 6px;
+    background-color: rgb(5, 36, 71);
+    line-height: 40px;
+    padding: 0 30px;
+    margin-top: 10%;
+    text-align: left;
+}
+
+.fsimg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 5% 37%;
+}
+
+strong{
+    color: aqua;
+    font-size: 18px;
+}
+
+#alias{
+    display: inline-block;
+}
+
+#ability{
+    display: inline-block;
+}
+
+#name{
+    font-size: 20px;
+    color: aqua;
+    text-decoration: underline;
+    text-align: center;
+}
