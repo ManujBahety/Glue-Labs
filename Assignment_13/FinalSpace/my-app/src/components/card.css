@@ -1,0 +1,16 @@
+.card{
+    border: 2px solid rgb(0, 47, 255);
+    width: 40%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: aqua;
+}
+.card h1{
+    font-size: 30px;
+}
+.card h2{
+    font-size: 20px;
+}
+.card h3{
+    font-size: 15px;
+}

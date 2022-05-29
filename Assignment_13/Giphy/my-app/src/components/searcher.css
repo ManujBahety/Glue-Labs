@@ -1,0 +1,9 @@
+.container{
+    
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    border-radius: 6px;
+    background-color: aqua;
+}
