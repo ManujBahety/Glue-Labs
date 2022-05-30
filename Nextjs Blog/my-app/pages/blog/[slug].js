@@ -1,8 +1,9 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import marked from 'marked'
+// import marked from 'marked'
 import Link from 'next/link'
+import { marked } from 'marked'
 
 export default function PostPage({
   frontmatter: { title, date, cover_image },
