@@ -6,7 +6,6 @@ import Post from '../components/Post'
 import { sortByDate } from '../utils'
 
 export default function Home({ posts }) {
-  console.log(posts)
   return (
     <div>
       <Head>
@@ -14,6 +13,7 @@ export default function Home({ posts }) {
       </Head>
 
       <div className='posts'>
+        <h1>Dev Blog</h1>
         {posts.map((post, index) => (
           <Post key={index} post={post} />
         ))}

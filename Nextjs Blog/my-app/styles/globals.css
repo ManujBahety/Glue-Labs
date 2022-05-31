@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,300&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 p {
@@ -17,13 +16,10 @@ p {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: rgb(247, 241, 241);
 }
 
-img {
-  width: 100%;
-  border-radius: 10px;
-}
+
 
 header {
   background: steelblue;
@@ -41,11 +37,12 @@ header a {
   margin: auto;
   overflow: auto;
   padding: 0 10px;
+  
 }
 
 .btn {
   display: inline-block;
-  background: steelblue;
+  background: rgb(22, 72, 112);
   color: #fff;
   border: none;
   padding: 8px 16px;
@@ -65,51 +62,121 @@ header a {
 }
 
 .btn-back {
-  background: #f4f4f4;
-  color: #000;
-  margin-bottom: 20px;
+  background-color:rgb(43, 41, 41);
+  color: rgb(240, 238, 238);
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 100px;
 }
 
 .posts {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 30px;
+  background-color: rgb(31, 30, 30);
+  gap: 40px;
+  padding-bottom: 30px;
+  
 }
-
+.card img {
+  width: 30%;
+  float: left;
+  border-radius: 35px;
+}
 .card {
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width:700px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  
+  float: left;
+  background-color: rgb(43, 41, 41);
+  color: rgb(240, 238, 238);
 }
-
+.card h2{
+  padding-left: 20px;
+  margin-left: 200px;
+  
+}
+.card p{
+  margin-left: 220px;
+  font-weight: 700;
+}
+.posts h1{
+  color:rgb(240, 238, 238);
+  text-align: center;
+  font-size: 5ch;
+  padding-top: 25px;
+  font-weight: 900;
+}
 .card-page {
   padding: 15px 30px;
+  padding: 15px;
+  border-radius: 10px;
+  width:800px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  
+  background-color: rgb(43, 41, 41);
+  color: rgb(240, 238, 238);
 }
-
+.card-page img{
+  width:65%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
 .post-title {
   margin: 10px 0;
+  font-size: 5ch;
 }
 
 .post-date {
-  background: #f4f4f4;
+  background: rgb(43, 41, 41);
   margin-bottom: 20px;
   padding: 3px 10px;
+  margin-left: 210px;
+  font-weight: 700;
+  
+}
+.postt-date {
+  background: rgb(43, 41, 41);
+  margin-bottom: 20px;
+  padding: 3px 10px;
+  display:flex;
+  justify-content: center;
+  font-size: 2ch;
+  
+}
+.post-body{
+  margin-top: 30px;
+  font-size: 2ch;
+  
+}
+
+.post-body h2{
+  margin-top: 20px;
 }
 
 .post-body ul,
 ol {
-  font-size: 110%;
+  font-size: 100%;
   line-height: 2.3;
   font-weight: bold;
-  margin: 10px 0;
+  margin-left: 15px;
+  font-size: 1.5ch;
 }
 
 .post-body pre {
-  background: #f4f4f4;
+  background: #251717;
   padding: 20px;
-  margin: 20px 0;
-  line-height: 2.3;
+  margin: 40px 0;
+  line-height: 3.6;
+  font-size: 1.5ch;
 }
 
 @media (max-width: 500px) {
