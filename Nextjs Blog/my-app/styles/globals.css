@@ -73,7 +73,7 @@ header a {
 
 .posts {
   display: grid;
-  background-color: rgb(31, 30, 30);
+  background-color: rgb(17, 17, 17);
   gap: 40px;
   padding-bottom: 30px;
   
@@ -81,7 +81,7 @@ header a {
 .card img {
   width: 30%;
   float: left;
-  border-radius: 35px;
+  border-radius: 15px;
 }
 .card {
   padding: 15px;
@@ -92,7 +92,7 @@ header a {
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  
   float: left;
-  background-color: rgb(43, 41, 41);
+  background-color: rgb(27, 27, 27);
   color: rgb(240, 238, 238);
 }
 .card h2{
@@ -120,7 +120,7 @@ header a {
   margin-right: auto;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  
-  background-color: rgb(43, 41, 41);
+  background-color: rgb(27, 27, 27);
   color: rgb(240, 238, 238);
 }
 .card-page img{
@@ -136,7 +136,7 @@ header a {
 }
 
 .post-date {
-  background: rgb(43, 41, 41);
+  background: rgb(27, 27, 27);
   margin-bottom: 20px;
   padding: 3px 10px;
   margin-left: 210px;
@@ -144,7 +144,7 @@ header a {
   
 }
 .postt-date {
-  background: rgb(43, 41, 41);
+  background: rgb(27, 27, 27);
   margin-bottom: 20px;
   padding: 3px 10px;
   display:flex;
