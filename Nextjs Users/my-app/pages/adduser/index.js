@@ -1,25 +1,37 @@
+import Router from "next/router";
 import {useState} from "react";
-// import { signup } from "../../client/request";
-import axios from 'axios';
 const Signup = (props) => {
     const [fName,setfName] = useState('');
     const [lName,setlName] = useState('');
     const [Email,setEmail] = useState('');
-    const [errorMessage, setErrorMessage] = useState(null);
 
-    const options = {
-        headers: {'app-id': '6296e81a72dcf9192ef55a31'}
-      };
-
+    const details = {
+        'firstName': fName ,
+        'lastName': lName,
+        'email': Email,
+    };
+    var formBody = [];
+    for (var property in details) {
+      var encodedKey = encodeURIComponent(property);
+      var encodedValue = encodeURIComponent(details[property]);
+      formBody.push(encodedKey + "=" + encodedValue);
+    }
+    formBody = formBody.join("&");
+      
     const submitHandler = async (e) => {
         e.preventDefault();
-
-        const payload = {fName,lName,Email};
-        try{    
-            const res = await axios.post('https://dummyapi.io/data/v1/user/create',
-            {firstName:fName,lastName:lName,email:Email}, options);
-            console.log({res});
-
+        try{
+            const res = await fetch('https://dummyapi.io/data/v1/user/create', {
+                method: 'POST',
+                headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'app-id': '6296e81a72dcf9192ef55a31'
+                },
+                body:formBody
+            });
+            alert('User Added');
+            console.log(res);
+            Router.push('http://localhost:3000/AllUsers');
         }catch(error){
 
         }
