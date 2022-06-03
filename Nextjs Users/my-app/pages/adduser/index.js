@@ -22,7 +22,7 @@ const Signup = (props) => {
     }
     formBody = formBody.join("&");
       
-    const onSubmit = async (e) => {
+    const SubmitHandler = async (e) => {
         // e.preventDefault();
         try{
             const res = await fetch('https://dummyapi.io/data/v1/user/create', {
@@ -48,7 +48,7 @@ const Signup = (props) => {
             <form style={{
                 margin: '50px 0'
             }}
-            onSubmit={handleSubmit(onSubmit)}>
+            onSubmit={handleSubmit(SubmitHandler)}>
                 <h1 className="h3 mb-3 fw-normal">Please Enter User</h1>
                 <div className="form-floating">
                 
